@@ -1,3 +1,6 @@
+# Create a class that will hold the stats of the characters
+
+
 class CharacterStats:
     def __init__(self, characters):
         self.characters = characters
@@ -24,7 +27,10 @@ class CharacterStats:
     def get_stats(self):
         return sum(info["info"] for info in self.stats)
 
-    # def attack(self, amount):
+    def attack(self, amount, description=""):
+        self.attack.append({"Damage": amount, "description": description})
+
+    # Dysplay the stats of the characters
 
     def __str__(self):
         output = self.characters.center(50, "-") + "\n"
