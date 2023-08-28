@@ -5,11 +5,8 @@ import stats
 # Create the characters
 Orderus = stats.CharacterStats(" Orderus ")
 Orderus.name = " Orderus "
-Orderus.health = 100
-Orderus.strenght = 70
-Orderus.defense = 50
-Orderus.speed = 60
-Orderus.luck = 30
+for i in range(60, 90):
+    Orderus.health = random.randint(60, 90)
 Wild_Beast = stats.CharacterStats(" Wild Beast ")
 Wild_Beast.name = " Wild Beast "
 Wild_Beast.health = 100
