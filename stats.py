@@ -27,9 +27,6 @@ class CharacterStats:
     def get_stats(self):
         return sum(info["info"] for info in self.stats)
 
-    def attack(self, amount, description=""):
-        self.attack.append({"Damage": amount, "description": description})
-
     # Dysplay the stats of the characters
 
     def __str__(self):
