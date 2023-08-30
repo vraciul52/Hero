@@ -6,4 +6,4 @@ ARG main.py .
 
 WORKDIR /app
 
-CMD [ "Hero.py", "battle.py" ]
+CMD [ "python", "battle.py" ]
