@@ -15,8 +15,8 @@ def battle(Orderus, Wild_Beast):
         Wild_Beast_damage = Wild_Beast.strenght - Orderus.defense
 
         # Initiate the skills of the characters
-        Orderus_Rapid_Strike = random.randint(0, 10)
-        Orderus_Magic_Shield = random.randint(0, 20)
+        Orderus_Rapid_Strike = 10
+        Orderus_Magic_Shield = 20
 
         # Calculate the non-negative damage
         Orderus_damage = max(0, Orderus_damage)
